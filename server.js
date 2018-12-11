@@ -14,15 +14,9 @@ const db = knex({
    }
  });
 
-// db.select('*').from('users').then(data => {
-//    console.log(data)
-// })
-
 const app = express();
 app.use(bodyParser.json())    // use after const=app has been created. 
 app.use(cors())
-
-
 
 //______________________________________________________________________
 app.get('/', (req, res)=> {
@@ -104,20 +98,6 @@ app.put('/image', (req, res) => {
    .catch(err => res.status(400).json('unable to get entries'))
 })
 ////////////////////////////////////////////////////////////////////////
-
-
-// // Load hash from your password DB.
-// bcrypt.compare("bacon", hash, function(err, res) {
-//    // res == true
-// });
-// bcrypt.compare("veggies", hash, function(err, res) {
-//    // res = false
-// });
-// 
-// bcrypt.hash(password, null, null, function(err, hash) {
-//    // Store hash in your password DB.
-//    console.log(hash)
-// });
 ////////////////////////////////////////////////////////////////////////
 app.listen(3000, ()=> {
    console.log('app is running test, on port 3000')
