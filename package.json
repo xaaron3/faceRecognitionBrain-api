@@ -1,0 +1,24 @@
+{
+  "name": "smart-brain-api",
+  "version": "1.0.0",
+  "description": "smart brain api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "any",
+    "keyword"
+  ],
+  "author": "aaron kong",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
