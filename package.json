@@ -4,7 +4,7 @@
   "description": "smart brain api",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env PORT=3000 node server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "any",
