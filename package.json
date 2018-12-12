@@ -4,7 +4,7 @@
   "description": "smart brain api",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "cross-env PORT=3000 node server.js"
   },
   "keywords": [
     "any",
@@ -22,6 +22,7 @@
     "pg": "^7.7.1"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "nodemon": "^1.18.7"
   }
 }
